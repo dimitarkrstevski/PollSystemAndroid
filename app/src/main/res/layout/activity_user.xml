@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <TextView
+        android:id="@+id/moiGlasanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мои Гласања"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/korisnickiPregledLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кориснички Преглед"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moiGlasanja"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prasanja"
+        android:layout_width="0dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/korisnickiPregledLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/korisnickiPregledLogo"
+        app:layout_constraintTop_toBottomOf="@+id/korisnickiPregledLogo"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <CheckBox
+        android:id="@+id/odg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Одговор 1"
+        app:layout_constraintStart_toStartOf="@+id/prasanja"
+        app:layout_constraintTop_toBottomOf="@+id/prasanja" />
+
+    <CheckBox
+        android:id="@+id/odg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Одговор2"
+        app:layout_constraintEnd_toEndOf="@+id/prasanja"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/odg1"
+        app:layout_constraintTop_toBottomOf="@+id/prasanja" />
+
+    <CheckBox
+        android:id="@+id/odg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Одговор 3"
+        app:layout_constraintStart_toStartOf="@+id/odg1"
+        app:layout_constraintTop_toBottomOf="@+id/odg1" />
+
+    <CheckBox
+        android:id="@+id/odg4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Одговор 4"
+        app:layout_constraintEnd_toEndOf="@+id/odg2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/odg3"
+        app:layout_constraintTop_toBottomOf="@+id/odg2" />
+
+    <TextView
+        android:id="@+id/preostanatoVreme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Преостанато Време:"
+        app:layout_constraintEnd_toEndOf="@+id/odg4"
+        app:layout_constraintStart_toStartOf="@+id/odg3"
+        app:layout_constraintTop_toBottomOf="@+id/odg3" />
+
+    <TextView
+        android:id="@+id/korisnikLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Одјави се"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
