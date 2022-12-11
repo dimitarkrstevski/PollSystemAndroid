@@ -34,5 +34,10 @@ public class AdministratorActivity extends AppCompatActivity {
 
 
 
+
+
+
+
+
     }
 }

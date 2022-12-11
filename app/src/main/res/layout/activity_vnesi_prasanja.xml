@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VnesiPrasanjaActivity">
+
+    <EditText
+        android:id="@+id/Prasanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Внеси Прашање"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/VnesiOdgovoriLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Внеси Понудени Одговори"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prasanje"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/btnPrasanjaVneseni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Внеси"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/VnesiOdgovoriLogo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/VnesiOdgovoriLogo"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/odgovor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Одговор 1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/VnesiOdgovoriLogo"
+        app:layout_constraintStart_toStartOf="@+id/VnesiOdgovoriLogo"
+        app:layout_constraintTop_toBottomOf="@+id/VnesiOdgovoriLogo" />
+
+    <EditText
+        android:id="@+id/odgovor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Одговор 2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/odgovor1"
+        app:layout_constraintStart_toStartOf="@+id/odgovor1"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor1" />
+
+    <EditText
+        android:id="@+id/odgovor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Одговор 3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/odgovor2"
+        app:layout_constraintStart_toStartOf="@+id/odgovor2"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor2" />
+
+    <EditText
+        android:id="@+id/odgovor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Одговор 4"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/odgovor3"
+        app:layout_constraintStart_toStartOf="@+id/odgovor3"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

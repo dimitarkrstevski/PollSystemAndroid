@@ -5,10 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Date;
+
 public class AdministratorGlasanjeActivity extends AppCompatActivity {
+
+
+    Date setVremeGlasanje;
+    DBHelper DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,14 +24,6 @@ public class AdministratorGlasanjeActivity extends AppCompatActivity {
 
 
 
-        TextView btn = findViewById(R.id.btnStartGlasanje);
-        btn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Toast.makeText(AdministratorGlasanjeActivity.this, "Гласањето е Започнато!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(AdministratorGlasanjeActivity.this, AdministratorActivity.class));
-            }
-        });
 
         TextView btn1 = findViewById(R.id.btnSendNotifikacija);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +33,29 @@ public class AdministratorGlasanjeActivity extends AppCompatActivity {
 
             }
         });
+
+        TextView btn2 = findViewById(R.id.btnVnesiPrasanja);
+        btn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(AdministratorGlasanjeActivity.this, VnesiPrasanjaActivity.class));
+            }
+        });
+
+        TextView btn3 = findViewById(R.id.btnStartGlasanje);
+        btn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Toast.makeText(AdministratorGlasanjeActivity.this, "Гласањето е Започнато!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(AdministratorGlasanjeActivity.this, AdministratorActivity.class));
+            }
+
+
+
+        });
+
+
+
 
     }
 }

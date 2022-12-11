@@ -24,12 +24,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:hint="Сетирање на Време"
         android:inputType="time"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AdmGlasanjeLogo" />
 
@@ -39,18 +40,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Испрати Нотификација"
-        app:layout_constraintEnd_toEndOf="@+id/setVremeGlasanje"
-        app:layout_constraintStart_toStartOf="@+id/setVremeGlasanje"
-        app:layout_constraintTop_toBottomOf="@+id/setVremeGlasanje" />
+        app:layout_constraintEnd_toEndOf="@+id/btnVnesiPrasanja"
+        app:layout_constraintStart_toStartOf="@+id/btnVnesiPrasanja"
+        app:layout_constraintTop_toBottomOf="@+id/btnVnesiPrasanja" />
 
     <Button
         android:id="@+id/btnStartGlasanje"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:text="Start Гласање"
         app:layout_constraintEnd_toEndOf="@+id/btnSendNotifikacija"
         app:layout_constraintStart_toStartOf="@+id/btnSendNotifikacija"
         app:layout_constraintTop_toBottomOf="@+id/btnSendNotifikacija" />
+
+    <Button
+        android:id="@+id/btnVnesiPrasanja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Внеси Прашања"
+        app:layout_constraintEnd_toEndOf="@+id/setVremeGlasanje"
+        app:layout_constraintStart_toStartOf="@+id/setVremeGlasanje"
+        app:layout_constraintTop_toBottomOf="@+id/setVremeGlasanje" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
