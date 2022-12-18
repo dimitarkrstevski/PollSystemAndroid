@@ -17,6 +17,7 @@ public class AdministratorGlasanjeActivity extends AppCompatActivity {
     Date setVremeGlasanje;
     DBHelper DB;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,22 @@ public class AdministratorGlasanjeActivity extends AppCompatActivity {
             }
         });
 
+        TextView btn4 = findViewById(R.id.btnVnesiPrasanja2);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdministratorGlasanjeActivity.this, VnesiPrasanja2Activity.class));
+            }
+        });
+        TextView btn5 = findViewById(R.id.btnVnesiPrasanja3);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdministratorGlasanjeActivity.this, VnesiPrasanja3Activity.class));
+            }
+        });
+
+
         TextView btn3 = findViewById(R.id.btnStartGlasanje);
         btn3.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -53,6 +70,14 @@ public class AdministratorGlasanjeActivity extends AppCompatActivity {
 
 
         });
+
+//        TextView vreme = findViewById(R.id.setVremeGlasanje);
+//        vreme.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
 
 
 

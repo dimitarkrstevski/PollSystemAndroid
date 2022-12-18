@@ -24,7 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:hint="Сетирање на Време"
@@ -41,14 +41,15 @@
         android:layout_marginTop="16dp"
         android:text="Испрати Нотификација"
         app:layout_constraintEnd_toEndOf="@+id/btnVnesiPrasanja"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnVnesiPrasanja"
-        app:layout_constraintTop_toBottomOf="@+id/btnVnesiPrasanja" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVnesiPrasanja3" />
 
     <Button
         android:id="@+id/btnStartGlasanje"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:text="Start Гласање"
         app:layout_constraintEnd_toEndOf="@+id/btnSendNotifikacija"
         app:layout_constraintStart_toStartOf="@+id/btnSendNotifikacija"
@@ -59,9 +60,29 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Внеси Прашања"
+        android:text="Внеси Прашања 1"
         app:layout_constraintEnd_toEndOf="@+id/setVremeGlasanje"
         app:layout_constraintStart_toStartOf="@+id/setVremeGlasanje"
         app:layout_constraintTop_toBottomOf="@+id/setVremeGlasanje" />
+
+    <Button
+        android:id="@+id/btnVnesiPrasanja2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Внеси Прашања 2"
+        app:layout_constraintEnd_toEndOf="@+id/btnVnesiPrasanja"
+        app:layout_constraintStart_toStartOf="@+id/btnVnesiPrasanja"
+        app:layout_constraintTop_toBottomOf="@+id/btnVnesiPrasanja" />
+
+    <Button
+        android:id="@+id/btnVnesiPrasanja3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Внеси прашања 3"
+        app:layout_constraintEnd_toEndOf="@+id/btnVnesiPrasanja2"
+        app:layout_constraintStart_toStartOf="@+id/btnVnesiPrasanja2"
+        app:layout_constraintTop_toBottomOf="@+id/btnVnesiPrasanja2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

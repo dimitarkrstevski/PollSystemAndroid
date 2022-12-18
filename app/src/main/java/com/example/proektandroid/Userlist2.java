@@ -7,40 +7,39 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class Userlist extends AppCompatActivity {
+public class Userlist2 extends AppCompatActivity {
 
     private static final long COUNTDOWN_IN_MILLIS = 30000;
     private CountDownTimer countDownTimer;
     private long timeleftinMillis;
 
+
     RecyclerView recyclerView;
-    ArrayList <String> question, answer1, answer2, answer3, answer4;
+    ArrayList <String> question2, answer21, answer22, answer23, answer24;
     DBHelper DB;
-    MyAdapter adapter;
+    MyAdapter2 adapter2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_userlist);
+        setContentView(R.layout.activity_userlist2);
 
 
         DB = new DBHelper(this);
-        question = new ArrayList<>();
-        answer1 = new ArrayList<>();
-        answer2 = new ArrayList<>();
-        answer3 = new ArrayList<>();
-        answer4 = new ArrayList<>();
-        recyclerView = findViewById(R.id.recycleviewer);
-        adapter = new MyAdapter(this, question, answer1, answer2, answer3, answer4);
-        recyclerView.setAdapter(adapter);
+        question2 = new ArrayList<>();
+        answer21 = new ArrayList<>();
+        answer22 = new ArrayList<>();
+        answer23 = new ArrayList<>();
+        answer24 = new ArrayList<>();
+
+        recyclerView = findViewById(R.id.recyclerViewer2);
+        adapter2 = new MyAdapter2(this, question2, answer21, answer22, answer23, answer24);
+        recyclerView.setAdapter(adapter2);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         displaydata();
 
@@ -49,25 +48,26 @@ public class Userlist extends AppCompatActivity {
 
     private void displaydata()
     {
-        Cursor cursor = DB.getdata();
+        Cursor cursor = DB.getdata3();
         if(cursor.getCount()==0){
             Toast.makeText(this, "Нема записи!", Toast.LENGTH_SHORT).show();
             return;
         }
         else {
             while (cursor.moveToNext()){
-                question.add(cursor.getString(1));
-                answer1.add(cursor.getString(2));
-                answer2.add(cursor.getString(3));
-                answer3.add(cursor.getString(4));
-                answer4.add(cursor.getString(5));
+                question2.add(cursor.getString(1));
+                answer21.add(cursor.getString(2));
+                answer22.add(cursor.getString(3));
+                answer23.add(cursor.getString(4));
+                answer24.add(cursor.getString(5));
+
             }
             timeleftinMillis = COUNTDOWN_IN_MILLIS;
             startCountDown();
 
+
         }
     }
-
     private void startCountDown(){
         countDownTimer = new CountDownTimer(timeleftinMillis, 1000) {
             @Override
@@ -98,4 +98,7 @@ public class Userlist extends AppCompatActivity {
             countDownTimer.cancel();
         }
     }
+
+
+
 }

@@ -42,6 +42,7 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
+        //Glasanje 1
         TextView btn3 = findViewById(R.id.buttonGlasanjeUser);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +52,24 @@ public class UserActivity extends AppCompatActivity {
         });
 
 
+        // Glasanje 2 so UserList 2
+        TextView btn4 = findViewById(R.id.buttonGlasanjeUser2);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(UserActivity.this, Userlist2.class));
+            }
+        });
+
+
+        // Glasanje 3 so UserList 3
+        TextView btn5 = findViewById(R.id.buttonGlasanjeUser3);
+       btn5.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(UserActivity.this, Userlist3.class));
+            }
+        });
 
     }
 }

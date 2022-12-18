@@ -51,9 +51,32 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Гласање"
+        android:text="Гласање 1"
         app:layout_constraintEnd_toEndOf="@+id/korisnickiPregledLogo"
         app:layout_constraintStart_toStartOf="@+id/korisnickiPregledLogo"
         app:layout_constraintTop_toBottomOf="@+id/korisnickiPregledLogo" />
+
+    <Button
+        android:id="@+id/buttonGlasanjeUser2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Гласање 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGlasanjeUser"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/buttonGlasanjeUser"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGlasanjeUser"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <Button
+        android:id="@+id/buttonGlasanjeUser3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Гласање 3"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGlasanjeUser2"
+        app:layout_constraintStart_toStartOf="@+id/buttonGlasanjeUser2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGlasanjeUser2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

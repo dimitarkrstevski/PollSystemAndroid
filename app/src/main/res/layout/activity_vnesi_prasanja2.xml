@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VnesiPrasanjaActivity">
+    tools:context=".VnesiPrasanja2Activity">
 
     <EditText
-        android:id="@+id/Prasanje"
+        android:id="@+id/Prasanje2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -15,13 +15,12 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.13999999" />
 
     <TextView
-        android:id="@+id/VnesiOdgovoriLogo"
+        android:id="@+id/Vnesi2OdgovoriLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -29,70 +28,70 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Prasanje"
+        app:layout_constraintEnd_toEndOf="@+id/Prasanje2"
+        app:layout_constraintStart_toStartOf="@+id/Prasanje2"
+        app:layout_constraintTop_toBottomOf="@+id/Prasanje2"
         app:layout_constraintVertical_bias="0.060000002" />
 
-    <Button
-        android:id="@+id/btnPrasanjaVneseni"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Внеси"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/VnesiOdgovoriLogo"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/VnesiOdgovoriLogo"
-        app:layout_constraintTop_toBottomOf="@+id/odgovor4"
-        app:layout_constraintVertical_bias="0.0" />
-
     <EditText
-        android:id="@+id/odgovor1"
+        android:id="@+id/odgovor12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Одговор 1"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/VnesiOdgovoriLogo"
-        app:layout_constraintStart_toStartOf="@+id/VnesiOdgovoriLogo"
-        app:layout_constraintTop_toBottomOf="@+id/VnesiOdgovoriLogo" />
+        app:layout_constraintEnd_toEndOf="@+id/Vnesi2OdgovoriLogo"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/Vnesi2OdgovoriLogo"
+        app:layout_constraintTop_toBottomOf="@+id/Vnesi2OdgovoriLogo" />
 
     <EditText
-        android:id="@+id/odgovor2"
+        android:id="@+id/odgovor22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Одговор 2"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/odgovor1"
-        app:layout_constraintStart_toStartOf="@+id/odgovor1"
-        app:layout_constraintTop_toBottomOf="@+id/odgovor1" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/odgovor12"
+        app:layout_constraintStart_toStartOf="@+id/odgovor12"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor12"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/odgovor3"
+        android:id="@+id/odgovor32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Одговор 3"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/odgovor2"
-        app:layout_constraintStart_toStartOf="@+id/odgovor2"
-        app:layout_constraintTop_toBottomOf="@+id/odgovor2" />
+        app:layout_constraintEnd_toEndOf="@+id/odgovor22"
+        app:layout_constraintStart_toStartOf="@+id/odgovor22"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor22" />
 
     <EditText
-        android:id="@+id/odgovor4"
+        android:id="@+id/odgovor42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Одговор 4"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/odgovor3"
-        app:layout_constraintStart_toStartOf="@+id/odgovor3"
-        app:layout_constraintTop_toBottomOf="@+id/odgovor3" />
+        app:layout_constraintEnd_toEndOf="@+id/odgovor32"
+        app:layout_constraintStart_toStartOf="@+id/odgovor32"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor32" />
 
+    <Button
+        android:id="@+id/btnPrasanjaVneseni2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Внеси"
+        app:layout_constraintEnd_toEndOf="@+id/Vnesi2OdgovoriLogo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Vnesi2OdgovoriLogo"
+        app:layout_constraintTop_toBottomOf="@+id/odgovor42" />
 </androidx.constraintlayout.widget.ConstraintLayout>

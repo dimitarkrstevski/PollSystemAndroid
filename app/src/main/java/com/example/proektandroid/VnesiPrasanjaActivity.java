@@ -16,6 +16,7 @@ public class VnesiPrasanjaActivity extends AppCompatActivity {
     Button btnPrasanjaVneseni;
     DBHelper DB;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
